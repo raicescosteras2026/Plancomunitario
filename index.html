@@ -3,21 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Próximamente | Plan Comunitario Playa de Ponce</title>
+<title>Plan Comunitario Playa de Ponce</title>
 <style>
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-
   html, body {
     height: 100%;
     width: 100%;
     font-family: 'Georgia', 'Times New Roman', serif;
     background: none;
   }
-
   .hero {
     position: relative;
     height: 100vh;
@@ -27,7 +25,6 @@
     justify-content: center;
     overflow: hidden;
   }
-
   .slide {
     position: absolute;
     top: 0;
@@ -41,11 +38,9 @@
     transition: opacity 2s ease-in-out;
     z-index: 0;
   }
-
   .slide.active {
     opacity: 1;
   }
-
   .overlay {
     position: absolute;
     top: 0;
@@ -60,7 +55,6 @@
     );
     z-index: 1;
   }
-
   .content {
     position: relative;
     z-index: 3;
@@ -69,24 +63,12 @@
     padding: 2rem;
     max-width: 900px;
   }
-
-  .eyebrow {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    font-size: 0.95rem;
-    letter-spacing: 0.35em;
-    text-transform: uppercase;
-    color: #ffd580;
-    margin-bottom: 1.5rem;
-    font-weight: 600;
-  }
-
   h1 {
     font-size: clamp(2rem, 5vw, 3.4rem);
     line-height: 1.25;
     font-weight: 700;
     text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
   }
-
   .subtitle {
     margin-top: 1.5rem;
     font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -95,13 +77,39 @@
     letter-spacing: 0.03em;
     color: #e8f0f2;
   }
-
   .divider {
     width: 80px;
     height: 3px;
     background-color: #ffd580;
     margin: 1.8rem auto;
     border-radius: 2px;
+  }
+  .buttons {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    justify-content: center;
+  }
+  .btn {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0.95rem 2.4rem;
+    border: 2px solid #ffd580;
+    border-radius: 4px;
+    background: rgba(255, 213, 128, 0.08);
+    transition: background 0.25s ease, color 0.25s ease, transform 0.2s ease;
+    display: inline-block;
+  }
+  .btn:hover {
+    background: #ffd580;
+    color: #061e2d;
+    transform: translateY(-2px);
   }
 </style>
 </head>
@@ -112,13 +120,15 @@
     <div class="slide" style="background-image: url('https://raw.githubusercontent.com/raicescosteras2026/Plancomunitario/main/playa3.jpg');"></div>
     <div class="overlay"></div>
     <div class="content">
-      <div class="eyebrow">Próximamente</div>
       <h1>Plan Comunitario de Preparación y Resiliencia<br>Playa de Ponce</h1>
       <div class="divider"></div>
       <p class="subtitle">Un esfuerzo colaborativo por la resiliencia costera de nuestra comunidad</p>
+      <div class="buttons">
+        <a class="btn" href="plan_comunitario.html">Versión PDF</a>
+        <a class="btn" href="plan_comunitario.html">Versión Web</a>
+      </div>
     </div>
   </div>
-
   <script>
     const slides = document.querySelectorAll('.slide');
     let current = 0;
