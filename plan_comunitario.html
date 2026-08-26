@@ -143,12 +143,27 @@ img{max-width:100%;display:block;}
 .frontmatter > p{ font-size:12.5pt; text-align:center; max-width:5.6in; margin:0 auto 14px auto; }
 .fm-notice{
   margin-top:0.6in;
-  display:flex; gap:14px; align-items:flex-start;
-  background:#f7f7f7; border:1px solid var(--line); border-left:6px solid var(--yellow);
-  padding:18px 20px; border-radius:2px;
+  border-top:3px solid var(--black);
+  border-bottom:3px solid var(--black);
+  padding:22px 4px 24px 4px;
+  text-align:center;
 }
-.fm-notice .ic{ width:26px;height:26px; margin-top:2px; }
-.fm-notice p{ margin:0; font-size:10.8pt; color:var(--gray); }
+.fm-notice-tag{
+  display:inline-block;
+  font-family:'Poppins',sans-serif;
+  font-weight:700;
+  font-size:9.5pt;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  background:var(--yellow);
+  color:var(--black);
+  padding:3px 12px;
+  margin-bottom:12px;
+}
+.fm-notice p{
+  margin:0 auto; max-width:5.2in;
+  font-size:11.5pt; line-height:1.6; color:var(--ink);
+}
 
 /* ---------------- TOC ---------------- */
 .toc-page{ padding:0.9in 0.85in; }
@@ -225,27 +240,10 @@ table tr:nth-child(even) td{ background:#f7f7f7; }
 <body>
 
 <section class="cover">
-  <div class="cover-topbar">
-    <svg class="crest"
-  xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-shield-check"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M11.46 20.846a12 12 0 0 1 -7.96 -14.846a12 12 0 0 0 8.5 -3a12 12 0 0 0 8.5 3a12 12 0 0 1 -.09 7.06" />
-  <path d="M15 19l2 2l4 -4" />
-</svg>
-    <span>Información importante para todos los residentes de La Playa, Ponce</span>
-  </div>
   <div class="cover-text cover-text-solo">
     <h1>PLAN<br>COMUNITARIO</h1>
     <h2>Preparación y Resiliencia ante Emergencias<br>La Playa de Ponce</h2>
-    <p>Proyecto Raíces Costeras — Puerto Rico</p>
+    <p>Proyecto Raíces Costeras — Un Nuevo Amanecer Inc.</p>
   </div>
 </section>
 <section class="frontmatter">
@@ -256,21 +254,7 @@ table tr:nth-child(even) td{ background:#f7f7f7; }
   <p>Este documento se distribuye a los residentes, líderes comunitarios, voluntarios y organizaciones colaboradoras de La Playa de Ponce, en el marco del Proyecto Raíces Costeras.</p>
   <p><strong>Conserve este documento en un lugar seguro y accesible.</strong></p>
   <div class="fm-notice">
-    <svg class="ic"
-  xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-info-circle"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
-  <path d="M12 9h.01" />
-  <path d="M11 12h1v4h1" />
-</svg>
+    <span class="fm-notice-tag">Aviso</span>
     <p>Este Plan Comunitario es una herramienta complementaria de preparación. No sustituye los planes, protocolos ni órdenes oficiales del Municipio Autónomo de Ponce, el NMEAD, ni ninguna otra autoridad con jurisdicción. Ante una emergencia, siga siempre las instrucciones de las autoridades competentes.</p>
   </div>
 </section>
